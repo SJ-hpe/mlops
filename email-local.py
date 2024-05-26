@@ -11,7 +11,7 @@ def my_email_func():
     smtp = SMTP()
     smtp.set_debuglevel(10)
     smtp.connect('smtp.sparkpostmail.com', 587)
-    smtp.login('SMTP_Injection', '425ff0c1a2b58a735ae43e821e0a2f36eaa6a50f')
+    smtp.login('SMTP_Injection', '')
 
     from_addr = "AlertPlane <info@alertplane.io>"
     to_addr = "abe24seven@gmail.com"

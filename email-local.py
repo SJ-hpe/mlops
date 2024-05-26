@@ -10,11 +10,11 @@ def print_hello():
 def my_email_func():
     smtp = SMTP()
     smtp.set_debuglevel(10)
-    smtp.connect('smtp.sparkpostmail.com', 587)
-    smtp.login('SMTP_Injection', '')
+    smtp.connect('smtp.example.com', 587)
+    smtp.login('smtp-username', 'smtp-password')
 
-    from_addr = "AlertPlane <info@alertplane.io>"
-    to_addr = "abe24seven@gmail.com"
+    from_addr = "Sender Name <info@example.com>"
+    to_addr = "recipient@example.com"
 
     subj = "hello"
     date = datetime.now().strftime( "%d/%m/%Y %H:%M" )

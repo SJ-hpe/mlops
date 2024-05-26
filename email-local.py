@@ -17,7 +17,7 @@ def my_email_func():
     to_addr = "abe24seven@gmail.com"
 
     subj = "hello"
-    date = datetime.datetime.now().strftime( "%d/%m/%Y %H:%M" )
+    date = datetime.now().strftime( "%d/%m/%Y %H:%M" )
 
     message_text = "Hello\nThis is a mail from your server\n\nBye\n"
 

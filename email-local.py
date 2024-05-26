@@ -11,7 +11,7 @@ def print_hello():
 
 default_args = {
         'owner': 'abe',
-        'start_date':datetime(2024,5,26),
+        'start_date':datetime(2024,5,26)
 }
 
 def send_smtp_mail():
@@ -32,6 +32,7 @@ def send_smtp_mail():
 
     smtp.sendmail(from_addr, to_addr, msg)
     smtp.quit()
+    return "Email sent!'
 
 
 dag = DAG('send_email_test', description='SMTP Function DAG',

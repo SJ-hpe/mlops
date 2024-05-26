@@ -32,7 +32,7 @@ def send_smtp_mail():
 
     smtp.sendmail(from_addr, to_addr, msg)
     smtp.quit()
-    return "Email sent!'
+    return 'Email sent!'
 
 
 dag = DAG('send_email_test', description='SMTP Function DAG',

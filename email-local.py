@@ -10,11 +10,10 @@ def print_hello():
 def my_email_func():
     smtp = SMTP()
     smtp.set_debuglevel(10)
-    smtp.connect('smtp.example.com', 587)
-    smtp.login('smtp-username', 'smtp-password')
+    smtp.connect('smtp.its.hpecorp.net', 25)
 
-    from_addr = "Sender Name <info@example.com>"
-    to_addr = "recipient@example.com"
+    from_addr = "shailesh.jadhav@hpe.com"
+    to_addr = "awez.shaikh@hpe.com"
 
     subj = "hello"
     date = datetime.now().strftime( "%d/%m/%Y %H:%M" )

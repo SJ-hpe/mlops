@@ -32,7 +32,6 @@ default_args = {
 }
 
 dag = DAG('send_email_test', description='SMTP Function DAG',
-          schedule_interval='* * * * *',
           default_args = default_args, catchup=False)
 
 
